@@ -42,7 +42,7 @@ Please provide only legal information. If the question is outside your expertise
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return "succesfull"
 
 @app.route('/ask', methods=['POST'])
 def ask():
