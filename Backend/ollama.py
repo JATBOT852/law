@@ -20,8 +20,10 @@
 from flask import Flask, request, jsonify, render_template
 from langchain_community.llms import ollama
 from langchain.prompts import PromptTemplate
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Initialize the language model
 llm = ollama.Ollama(model="llama3")
